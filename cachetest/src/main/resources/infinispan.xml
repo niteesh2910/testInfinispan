@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<infinispan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="urn:infinispan:config:9.0 http://www.infinispan.org/schemas/infinispan-config-9.0.xsd"
+      xmlns="urn:infinispan:config:9.0">
+      
+      <cache-container default-cache="default">
+          <transport cluster="TESTApp"/> <!-- stack="external-file" -->
+          <distributed-cache name="default"  mode="ASYNC" owners="4" statistics="true">
+            	<expiration lifespan="3600000"/> <!-- 1 hour -->
+		        <memory>
+		           	<object size="100000"/>
+		        </memory>
+          </distributed-cache>
+          <distributed-cache name="common"  mode="ASYNC" owners="4" statistics="true">
+            	<expiration lifespan="3600000"/> <!-- 1 hour -->
+		        <memory>
+		           	<object size="100000"/>
+		        </memory>
+          </distributed-cache>
+      </cache-container>
+</infinispan>
+
