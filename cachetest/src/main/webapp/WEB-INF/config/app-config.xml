@@ -32,7 +32,7 @@
 <!-- 			<ref bean="nativeCacheManager" /> -->
 <!-- 		</constructor-arg> -->
 <!-- 	</bean> -->
-          
+	
 	<context:component-scan base-package="com.test.niteesh.service. com.test.niteesh.dao" />
 	<aop:aspectj-autoproxy />
 

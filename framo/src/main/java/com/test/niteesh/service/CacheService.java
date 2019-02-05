@@ -14,12 +14,12 @@ import com.test.niteesh.entity.ApplicationProperty;
 @Service
 public class CacheService {
 	
-	@Autowired
-	CacheManager cacheManager;
+//	@Autowired
+//	CacheManager cacheManager;
 
 //	@Cacheable(value = "common", key = "#token", unless="#result==null")
     public List<ApplicationProperty> getAllProps(String token) {
-		Cache cache = cacheManager.getCache("common");
+//		Cache cache = cacheManager.getCache("common");
 		return null;
     }
 }

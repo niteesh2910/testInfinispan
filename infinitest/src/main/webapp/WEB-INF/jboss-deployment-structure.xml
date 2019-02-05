@@ -1,0 +1,7 @@
+<jboss-deployment-structure>
+	<deployment>
+		<dependencies>
+			<module name="org.jboss.as.clustering.infinispan" />
+    	</dependencies>
+	</deployment>
+</jboss-deployment-structure>  

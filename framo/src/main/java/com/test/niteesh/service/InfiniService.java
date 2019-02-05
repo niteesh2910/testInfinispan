@@ -14,7 +14,7 @@ public class InfiniService {
 
 	@Autowired InfiniDAO infiDao;
 	
-//	@Cacheable(value = "common", key = "#token", unless="#result==null")
+	@Cacheable(value = "common", key = "#token", unless="#result==null")
 	public List<ApplicationProperty> getAllProps(String token) { 
 		return infiDao.getAllProps(token);
 	}
