@@ -17,7 +17,7 @@ public class CacheService {
 	@Autowired
 	CacheManager cacheManager;
 
-	@Cacheable(value = "common", key = "#token", unless="#result==null")
+//	@Cacheable(value = "common", key = "#token", unless="#result==null")
     public List<ApplicationProperty> getAllProps(String token) {
 		Cache cache = cacheManager.getCache("common");
 		return null;
